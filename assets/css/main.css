@@ -3944,16 +3944,19 @@ input, select, textarea {
   align-items: stretch;
 }
 
+#resize-image {
+	width: 70%;
+}
 	
 	@media screen and (max-width: 800px) {
 		#resize-image {
-			width: 90%!important;
+			width: 50%!important;
 		}
 	}
 
 	@media screen and (max-width: 600px) {
 		#resize-image {
-			width: 80%!important;
+			width: 40%!important;
 		}
 	}
 
