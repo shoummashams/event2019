@@ -3946,3 +3946,7 @@ input, select, textarea {
 			width: 70%;
 		}
 	}
+
+#loc {
+	display: inline-block;
+}
