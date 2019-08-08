@@ -3960,6 +3960,10 @@ input, select, textarea {
 		}
 	}
 
+.column-footer #resize-image {
+	width: auto;
+}
+
 #loc {
 	display: inline-block;
 }
