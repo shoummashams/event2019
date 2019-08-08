@@ -1834,7 +1834,7 @@ input, select, textarea {
 		transition: border-color 0.2s ease;
 		background-color: transparent;
 		border: solid 1px !important;
-		border-color: rgba(255, 255, 255, 0.15) !important;
+		border-color: rgba(255, 255, 255, 0.35) !important;
 		border-radius: 3em;
 		color: #ffffff !important;
 		cursor: pointer;
@@ -3885,6 +3885,7 @@ input, select, textarea {
 		background-position: top left;
 		background-repeat: no-repeat;
 		background-size: cover;
+		height:100vh;
 	}
 
 		#intro p {
@@ -3917,10 +3918,18 @@ input, select, textarea {
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column-header {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+	margin-left: 0.5em;
+	margin-top: -8%;
 }
+
+	@media screen and (max-width: 600px) {
+		.column-header {
+			margin-top: -20%;
+		}
+	}
 
 .column-footer {
   width: 50%;
@@ -3928,22 +3937,23 @@ input, select, textarea {
 }
 
 /* Clear floats after image containers */
-.row::after {
+.row-table::after {
   content: "";
   clear: both;
   display: table;
+  align-items: stretch;
 }
 
 	
 	@media screen and (max-width: 800px) {
-		#footer-logo {
-			width: 90%;
+		#resize-image {
+			width: 90%!important;
 		}
 	}
 
 	@media screen and (max-width: 600px) {
-		#footer-logo {
-			width: 70%;
+		#resize-image {
+			width: 80%!important;
 		}
 	}
 
