@@ -189,9 +189,6 @@
 
 	// Hamburger menu
 
-	var div1 = document.getElementById("menu1");
-	var div2 = document.getElementById("menu2");
-
 	$('.checkbox-toggle').on('click', function () {
 	  $('.menu').toggleClass('open');
 	  $('.menu #menu1').toggleClass('visible1');
