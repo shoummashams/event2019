@@ -189,13 +189,20 @@
 
 	// Hamburger menu
 
-	$('.outer-menu').on('click', function () {
+	var div1 = document.getElementById("menu1");
+	var div2 = document.getElementById("menu2");
+
+	$('.checkbox-toggle').on('click', function () {
 	  $('.menu').toggleClass('open');
+	  $('.menu #menu1').toggleClass('visible1');
+	  $('.menu #menu2').toggleClass('visible2');
 	});
 
 
 	$( '.menu a' ).on("click", function(){
-	  $('.menu').toggleClass('open');
+	  $('.menu').removeClass('open');
+	  $('.menu #menu1').removeClass('visible1');
+	  $('.menu #menu2').removeClass('visible2');
 	});
 
 })(jQuery);
