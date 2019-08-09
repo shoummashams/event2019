@@ -187,4 +187,15 @@
 				}
 			});
 
+	// Hamburger menu
+
+	$('.outer-menu').on('click', function () {
+	  $('.menu').toggleClass('open');
+	});
+
+
+	$( '.menu a' ).on("click", function(){
+	  $('.menu').toggleClass('open');
+	});
+
 })(jQuery);
